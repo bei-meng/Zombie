@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Atlas>
+    <Texture filename="zskb_ui.tex"/>
+    <Elements>
+        <Element name="zskb_hud_nightvision_icon.tex" u1="0.00390625" u2="0.496094" v1="0.0078125" v2="0.992188"/>
+        <Element name="zskb_hud_rain_icon.tex" u1="0.503906" u2="0.996094" v1="0.0078125" v2="0.992188"/>
+    </Elements>
+    <StraightAlpha>false</StraightAlpha>
+</Atlas>
+
