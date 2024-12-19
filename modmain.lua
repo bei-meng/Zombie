@@ -48,6 +48,7 @@ PrefabFiles = {
     "zskb_paper_doll",                      --内殿纸人
     "zskb_incense_burner",                  --香炉
     "zskb_coffin_nail",                     --棺材钉
+    "zskb_moving_paper_doll",               --移动纸人
 }
 
 Assets = {

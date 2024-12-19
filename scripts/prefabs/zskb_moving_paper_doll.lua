@@ -94,6 +94,7 @@ local function fn()
 
     inst:AddTag("notraptrigger")            --不会触发陷阱
     inst:AddTag("antlion_sinkhole_blocker") --不受蚁狮地震波及
+    inst:AddTag("zskb_moving_paper_doll")
 
     MakeSnowCoveredPristine(inst)
 
@@ -129,7 +130,7 @@ local function fn()
     inst.CanStandUp = CanStandUp
     inst.ChangePhysics = ChangePhysics
 
-    inst:SetStateGraph("SGstagehand")
+    inst:SetStateGraph("SGzskb_moving_paper_doll")
     inst:SetBrain(brain)
 
     inst:AddComponent("inspectable")

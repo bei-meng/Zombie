@@ -270,6 +270,9 @@ STRINGS.NAMES.ZSKB_COFFIN_NAIL = "棺材钉"
 STRINGS.RECIPE_DESC.ZSKB_COFFIN_NAIL = "钉棺材用的"
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.ZSKB_COFFIN_NAIL = "摸上去很凉"
 
+STRINGS.NAMES.ZSKB_MOVING_PAPER_DOLL = "移动纸人"
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.ZSKB_MOVING_PAPER_DOLL = "他是在动吗？"
+
 --------------------------------------------------------------------------
 --[[ ACTIONS ]]
 --------------------------------------------------------------------------

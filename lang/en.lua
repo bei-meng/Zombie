@@ -270,6 +270,9 @@ STRINGS.NAMES.ZSKB_COFFIN_NAIL = "Coffin Nail"
 STRINGS.RECIPE_DESC.ZSKB_COFFIN_NAIL = "Used for nailing coffins"
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.ZSKB_COFFIN_NAIL = "Feels cold to the touch"
 
+STRINGS.NAMES.ZSKB_MOVING_PAPER_DOLL = "Moving Paper Doll"
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.ZSKB_MOVING_PAPER_DOLL = "Is it moving?"
+
 --------------------------------------------------------------------------
 --[[ ACTIONS ]]
 --------------------------------------------------------------------------
