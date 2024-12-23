@@ -104,7 +104,6 @@ Assets = {
 
     Asset("ANIM", "anim/zskb_minisign1.zip"),      --小木牌资源,后面的数字代表 zskb_minisign_list.lua 中的序号
     Asset("ANIM", "anim/zskb_minisign2.zip"),
-
 }
 
 --判定别的mod是否开启，参考了风铃大佬的代码
