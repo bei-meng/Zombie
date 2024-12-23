@@ -165,3 +165,4 @@ modimport("postinit/foods")          --料理
 modimport("postinit/stategraphs")
 
 --※※兼容高清小木牌需前往 zskb_minisign_list.lua 填写 symbol(贴图名称) 和动画序号
+--不会弄小木牌的话交给Gyde弄就行
