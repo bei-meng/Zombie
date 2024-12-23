@@ -24,6 +24,13 @@ STRINGS.ZSKB = {}
 STRINGS.ZSKB.CATCHING = "I need to use a special bug net to catch it"
 
 --------------------------------------------------------------------------
+--[[ TECH ]]
+--------------------------------------------------------------------------
+STRINGS.UI.CRAFTING.NEEDSZSKB_PAPER_TECH_ONE = "Craft near a moving paper doll"
+STRINGS.ACTIONS.OPEN_CRAFTING.ZSKB_PAPER = "Probe"
+STRINGS.UI.CRAFTING_FILTERS.ZSKB_PAPER = "Paper Crafting"
+
+--------------------------------------------------------------------------
 --[[ RECIPES ]]
 --------------------------------------------------------------------------
 STRINGS.NAMES.ZSKB_COFFIN = "Coffin"

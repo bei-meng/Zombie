@@ -153,6 +153,7 @@ modimport("lang/" .. lang .. ".lua") --※※中文&英文: zhs.lua en.lua
 
 modimport("postinit/registerimages") --※※注册贴图
 modimport("postinit/tech")           --科技
+modimport("postinit/zskb_tech")      --科技(Gyde:重新写一页,旧的回头给删了)
 modimport("postinit/recipes")        --※※制作配方
 modimport("postinit/actions")        --mod动作
 modimport("postinit/containers")     --容器

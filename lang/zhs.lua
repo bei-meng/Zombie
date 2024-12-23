@@ -24,6 +24,13 @@ STRINGS.ZSKB = {}
 STRINGS.ZSKB.CATCHING = "我需要用特殊的捕虫网来捕捉它"
 
 --------------------------------------------------------------------------
+--[[ TECH ]]
+--------------------------------------------------------------------------
+STRINGS.UI.CRAFTING.NEEDSZSKB_PAPER_TECH_ONE = "靠近移动的纸人制作"
+STRINGS.ACTIONS.OPEN_CRAFTING.ZSKB_PAPER = "试探" --靠近解锁时的前置提示。名字与AddPrototyperDef里的action_str一致
+STRINGS.UI.CRAFTING_FILTERS.ZSKB_PAPER = "纸扎栏"
+
+--------------------------------------------------------------------------
 --[[ RECIPES ]]
 --------------------------------------------------------------------------
 STRINGS.NAMES.ZSKB_COFFIN = "阴棺"

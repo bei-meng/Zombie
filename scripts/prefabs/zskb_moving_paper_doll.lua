@@ -37,10 +37,6 @@ local function onworked(inst, worker)
     inst.components.workable:SetWorkLeft(TUNING.STAGEHAND_HITS_TO_GIVEUP)
 end
 
-local function getstatus(inst)
-    return inst.sg:HasStateTag("hiding") and "HIDING" or "AWAKE"
-end
-
 local function CanStandUp(inst)
     --如果不在光线下或屏幕外（屏幕外是为了不让它永远卡在萤火虫/猪舍灯之类的东西上），它就可以站起来走动
     return (not inst:IsInLight()) or (TheWorld.state.isnight and (not TheWorld.state.isfullmoon) and not inst:IsNearPlayer(30))
@@ -95,6 +91,7 @@ local function fn()
     inst:AddTag("notraptrigger")            --不会触发陷阱
     inst:AddTag("antlion_sinkhole_blocker") --不受蚁狮地震波及
     inst:AddTag("zskb_moving_paper_doll")
+    inst:AddTag("prototyper")               --科技
 
     MakeSnowCoveredPristine(inst)
 
@@ -134,7 +131,9 @@ local function fn()
     inst:SetBrain(brain)
 
     inst:AddComponent("inspectable")
-    inst.components.inspectable.getstatus = getstatus
+
+    inst:AddComponent("prototyper")
+    inst.components.prototyper.trees = TUNING.PROTOTYPER_TREES.ZSKB_PAPER_TECH_ONE
 
     inst:AddComponent("lootdropper")
     inst.components.lootdropper:SetChanceLootTable('stagehand_creature')
