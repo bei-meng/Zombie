@@ -38,6 +38,8 @@ local function fn()
 
     inst:AddComponent("inventoryitem")
 
+    inst:AddComponent("zskb_encase")
+
     inst:AddComponent("leader")
 
     MakeHauntableLaunchAndDropFirstItem(inst)

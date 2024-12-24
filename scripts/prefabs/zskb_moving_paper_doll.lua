@@ -19,6 +19,7 @@ local prefabs =
 }
 
 local brain = require("brains/stagehandbrain")
+local f_brain = require("brains/zskb_move_paper_doll_brain")
 
 SetSharedLootTable('zskb_moving_paper_doll_creature',
     {
@@ -65,6 +66,29 @@ local function ChangePhysics(inst, is_standing)
         inst.Physics:CollidesWith(COLLISION.ITEMS)
         inst.Physics:CollidesWith(COLLISION.CHARACTERS)
         inst.Physics:CollidesWith(COLLISION.GIANTS)
+    end
+end
+
+--当香炉被玩家作死删除了
+local function OnStopFollowing(inst)
+    inst:SetBrain(brain)
+end
+
+local function OnStartFollowing(inst)
+    inst:SetBrain(f_brain)
+end
+
+local function OnSave(inst, data)
+    if inst.components.follower.leader ~= nil then
+        data.zskb_bind = true
+    else
+        data.zskb_bind = false
+    end
+end
+
+local function OnLoad(inst, data)
+    if data and data.zskb_bind then
+        inst:SetBrain(f_brain)
     end
 end
 
@@ -135,8 +159,15 @@ local function fn()
     inst:AddComponent("prototyper")
     inst.components.prototyper.trees = TUNING.PROTOTYPER_TREES.ZSKB_PAPER_TECH_ONE
 
+    inst:AddComponent("follower")
+    inst:ListenForEvent("stopfollowing", OnStopFollowing)
+    inst:ListenForEvent("startfollowing", OnStartFollowing)
+
     inst:AddComponent("lootdropper")
     inst.components.lootdropper:SetChanceLootTable('stagehand_creature')
+
+    inst.OnSave = OnSave
+    inst.OnLoad = OnLoad
 
     return inst
 end

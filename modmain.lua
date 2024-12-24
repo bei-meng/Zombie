@@ -1,9 +1,9 @@
 GLOBAL.setmetatable(env, { __index = function(t, k) return GLOBAL.rawget(GLOBAL, k) end })
 local _G = GLOBAL
 
---※※标注的地方大概率在新增内容的时候需要添加对应的参数,请仔细核对※※标注的部分
+--※※ 标注的地方大概率在新增内容的时候需要添加对应的参数,请仔细核对 ※※ 标注的部分
 
---※※万物皆是prefab
+--※※ 万物皆是prefab
 PrefabFiles = {
     "zskb_zombie",                          --人物代码文件
     "zskb_zombie_none",                     --人物皮肤
@@ -49,6 +49,7 @@ PrefabFiles = {
     "zskb_incense_burner",                  --香炉
     "zskb_coffin_nail",                     --棺材钉
     "zskb_moving_paper_doll",               --移动纸人
+    "zskb_paper_money",                     --纸币
 }
 
 Assets = {
@@ -102,6 +103,9 @@ Assets = {
 
     Asset("ANIM", "anim/zskb_leaves_canopy.zip"),  --榕树树荫
 
+    Asset("ATLAS", "images/paper_tech_icon.xml"), --纸扎科技图标
+    Asset("IMAGE", "images/paper_tech_icon.tex"),
+
     Asset("ANIM", "anim/zskb_minisign1.zip"),      --小木牌资源,后面的数字代表 zskb_minisign_list.lua 中的序号
     Asset("ANIM", "anim/zskb_minisign2.zip"),
 }
@@ -149,12 +153,12 @@ AddReplicableComponent("zskb_zombie_gas")
 AddReplicableComponent("zskb_zombie_threefire")
 
 local lang = GetModConfigData("language") or "zhs"
-modimport("lang/" .. lang .. ".lua") --※※中文&英文: zhs.lua en.lua
+modimport("lang/" .. lang .. ".lua") --※※ 中文&英文: zhs.lua en.lua
 
-modimport("postinit/registerimages") --※※注册贴图
+modimport("postinit/registerimages") --※※ 注册贴图
 modimport("postinit/tech")           --科技
 modimport("postinit/zskb_tech")      --科技(Gyde:重新写一页,旧的回头给删了)
-modimport("postinit/recipes")        --※※制作配方
+modimport("postinit/recipes")        --※※ 制作配方
 modimport("postinit/actions")        --mod动作
 modimport("postinit/containers")     --容器
 modimport("postinit/rpc")
@@ -164,5 +168,5 @@ modimport("postinit/postinit")       --原版prefabs的hook函数(Gyde:我没有
 modimport("postinit/foods")          --料理
 modimport("postinit/stategraphs")
 
---※※兼容高清小木牌需前往 zskb_minisign_list.lua 填写 symbol(贴图名称) 和动画序号
+--※※ 兼容高清小木牌需前往 zskb_minisign_list.lua 填写 symbol(贴图名称) 和动画序号
 --不会弄小木牌的话交给Gyde弄就行

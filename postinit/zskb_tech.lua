@@ -34,7 +34,7 @@ AddRecipeFilter({
     name = "ZSKB_PAPER",
     atlas = "images/paper_tech_icon.xml",
     image = "paper_tech_icon.tex",
-    custom_pos = true
+    custom_pos = true --不新建常驻分类
 })
 
 --------------------------------------------------------------------------
@@ -50,7 +50,7 @@ for k, v in pairs(TUNING.PROTOTYPER_TREES) do
     v.ZSKB_PAPER_TECH = 0
 end
 
-TUNING.PROTOTYPER_TREES.AP_RL_TECH_ONE = TechTree.Create({
+TUNING.PROTOTYPER_TREES.ZSKB_PAPER_TECH_ONE = TechTree.Create({
     ZSKB_PAPER_TECH = 1,
 })
 

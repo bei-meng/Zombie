@@ -280,12 +280,17 @@ STRINGS.CHARACTERS.GENERIC.DESCRIBE.ZSKB_COFFIN_NAIL = "Feels cold to the touch"
 STRINGS.NAMES.ZSKB_MOVING_PAPER_DOLL = "Moving Paper Doll"
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.ZSKB_MOVING_PAPER_DOLL = "Is it moving?"
 
+STRINGS.NAMES.ZSKB_PAPER_MONEY = "Paper Money"
+STRINGS.RECIPE_DESC.ZSKB_PAPER_MONEY = "Even the underworld has wealth"
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.ZSKB_PAPER_MONEY = "If only it were real money"
+
 --------------------------------------------------------------------------
 --[[ ACTIONS ]]
 --------------------------------------------------------------------------
 ACTIONS_ZSKB_TOUCH_GENERIC_STR = "Touch"
 ACTIONS_ZSKB_TOUCH_TAKE_STR = "Take"
 ACTIONS_ZSKB_ENCASE_GENERIC_STR = "Encase"
+ACTIONS_ZSKB_ENCASE_BIND_STR = "Bind"
 ACTIONS_ZSKB_ENCASE_FAIL = "It's already full"
 ACTIONS_ZSKB_PLANT_GENERIC_STR = "Plant"
 ACTIONS_ZSKB_UMBRELLA_CLOSE_GENERIC_STR = "Close Umbrella"

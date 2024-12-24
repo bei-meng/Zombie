@@ -1,6 +1,7 @@
 ----------------------------------------------------------------
 --[[ ACTIONS DEFINE ]]
 ----------------------------------------------------------------
+local f_brain = require("brains/zskb_move_paper_doll_brain")
 local actions = {
     ZSKB_TOUCH = {
         id = "ZSKB_TOUCH",
@@ -25,17 +26,34 @@ local actions = {
     },
     ZSKB_ENCASE = {
         id = "ZSKB_ENCASE",
+        priority = 1,
         invalid_hold_action = true,
         strfn = function(act)
-            return "GENERIC"
+            if act.target:HasTag("zskb_moving_paper_doll") then
+                return "ZSKB_BIND"
+            else
+                return "GENERIC"
+            end
         end,
         fn = function(act)
-            if act.invobject ~= nil and act.invobject.components.container ~= nil and act.target ~= nil and act.target.prefab == "zskb_ghostfire" then
-                local give = act.invobject.components.container:GiveItem(act.target)
-                if give then
-                    return true
-                else
-                    return false, "ZSKB_ENCASE_FAIL"
+            local useitem = act.invobject
+            local target = act.target
+            if useitem ~= nil and target ~= nil then
+                if useitem.components.container ~= nil and target.prefab == "zskb_ghostfire" then
+                    local give = act.invobject.components.container:GiveItem(act.target)
+                    if give then
+                        return true
+                    else
+                        return false, "ZSKB_ENCASE_FAIL"
+                    end
+                elseif useitem.prefab == "zskb_incense_burner" and target.prefab == "zskb_moving_paper_doll" then
+                    if target.components.follower.leader == nil then
+                        target.components.follower:SetLeader(useitem)
+                        target:SetBrain(f_brain)
+                        return true
+                    else
+                        return false
+                    end
                 end
             end
         end
@@ -98,6 +116,7 @@ STRINGS.ACTIONS.ZSKB_TOUCH = {
 
 STRINGS.ACTIONS.ZSKB_ENCASE = {
     GENERIC = ACTIONS_ZSKB_ENCASE_GENERIC_STR,
+    ZSKB_BIND = ACTIONS_ZSKB_ENCASE_BIND_STR,
 }
 STRINGS.CHARACTERS.GENERIC.ACTIONFAIL.ZSKB_ENCASE = {
     ZSKB_ENCASE_FAIL = ACTIONS_ZSKB_ENCASE_FAIL,
@@ -154,7 +173,9 @@ AddComponentAction("SCENE", "teleporter", function(inst, doer, actions, right)
     end
 end)
 AddComponentAction("USEITEM", "zskb_encase", function(inst, doer, target, actions)
-    if target:HasTag("zskb_ghostfire") then
+    if target:HasTag("zskb_ghostfire") and inst.prefab == "zskb_gourd" then
+        table.insert(actions, ACTIONS.ZSKB_ENCASE)
+    elseif target:HasTag("zskb_moving_paper_doll") and inst.prefab == "zskb_incense_burner" then
         table.insert(actions, ACTIONS.ZSKB_ENCASE)
     end
 end)
