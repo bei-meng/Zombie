@@ -262,6 +262,32 @@ AddRecipe2(
     }
 )
 
+--破煞符
+AddRecipe2(
+    "zskb_break_talisman",
+    { Ingredient("papyrus", 1), Ingredient("featherpencil", 1),},
+    TECH.SCIENCE_TWO,
+    {
+        atlas = "images/zskb_inventoryimages.xml",
+        image = "zskb_break_talisman.tex",
+        builder_tag = "zskb_zombie",
+    },
+    { "CHARACTER",}
+)
+
+--震煞符
+AddRecipe2(
+    "zskb_seal_talisman",
+    { Ingredient("papyrus", 1), Ingredient("featherpencil", 1),Ingredient("thulecite", 1),},
+    TECH.SCIENCE_TWO,
+    {
+        atlas = "images/zskb_inventoryimages.xml",
+        image = "zskb_seal_talisman.tex",
+        builder_tag = "zskb_zombie",
+    },
+    { "CHARACTER",}
+)
+
 ----CONSTRUCTION PLANS----
 --no api yet
 local ZSKB_CONSTRUCTION_PLANS = {

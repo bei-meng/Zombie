@@ -51,6 +51,8 @@ PrefabFiles = {
     "zskb_moving_paper_doll",               --移动纸人
     "zskb_paper_money",                     --纸币
     "zskb_paper_moon",                      --纸月亮
+    "zskb_break_talisman",                  --破煞符
+    "zskb_seal_talisman",                   --镇煞符
 }
 
 Assets = {
@@ -169,5 +171,7 @@ modimport("postinit/postinit")       --原版prefabs的hook函数(Gyde:我没有
 modimport("postinit/foods")          --料理
 modimport("postinit/stategraphs")
 
+
+modimport("postinit/immobilize")    -- 定身相关
 --※※ 兼容高清小木牌需前往 zskb_minisign_list.lua 填写 symbol(贴图名称) 和动画序号
 --不会弄小木牌的话交给Gyde弄就行

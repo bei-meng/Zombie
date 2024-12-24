@@ -288,6 +288,13 @@ STRINGS.NAMES.ZSKB_PAPER_MOON = "纸月亮"
 STRINGS.RECIPE_DESC.ZSKB_PAPER_MOON = "剪个纸月亮把天盖住！"
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.ZSKB_PAPER_MOON = "剪个纸月亮把天盖住！"
 
+STRINGS.NAMES.ZSKB_BREAK_TALISMAN = "破煞符"
+STRINGS.RECIPE_DESC.ZSKB_BREAK_TALISMAN = "驱逐不祥之煞气，护佑人身平安康健。"
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.ZSKB_BREAK_TALISMAN  = "驱逐不祥之煞气，护佑人身平安康健。"
+
+STRINGS.NAMES.ZSKB_SEAL_TALISMAN = "镇煞符"
+STRINGS.RECIPE_DESC.ZSKB_SEAL_TALISMAN = "除阴灵秽气，避除血光之灾。"
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.ZSKB_SEAL_TALISMAN  = "除阴灵秽气，避除血光之灾。"
 --------------------------------------------------------------------------
 --[[ ACTIONS ]]
 --------------------------------------------------------------------------

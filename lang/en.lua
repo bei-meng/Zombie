@@ -288,6 +288,13 @@ STRINGS.NAMES.ZSKB_PAPER_MOON = "Paper Moon"
 STRINGS.RECIPE_DESC.ZSKB_PAPER_MOON = "Cut a paper moon to cover the sky!"
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.ZSKB_PAPER_MOON = "Cut a paper moon to cover the sky!"
 
+STRINGS.NAMES.ZSK_BREAK_TALISMAN = "Break seal talisman"
+STRINGS.RECIPE_DESC.ZSK_BREAK_TALISMAN = "Expel the ominous and malevolent energy, and protect the person's safety and health."
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.ZSK_BREAK_TALISMAN  = "Expel the ominous and malevolent energy, and protect the person's safety and health."
+
+STRINGS.NAMES.ZSKB_SEAL_TALISMAN = "镇煞符"
+STRINGS.RECIPE_DESC.ZSKB_SEAL_TALISMAN = "除阴灵秽气，避除血光之灾。"
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.ZSKB_SEAL_TALISMAN  = "除阴灵秽气，避除血光之灾。"
 --------------------------------------------------------------------------
 --[[ ACTIONS ]]
 --------------------------------------------------------------------------
