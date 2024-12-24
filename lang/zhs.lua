@@ -284,6 +284,10 @@ STRINGS.NAMES.ZSKB_PAPER_MONEY = "纸币"
 STRINGS.RECIPE_DESC.ZSKB_PAPER_MONEY = "阴间亦有财帛"
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.ZSKB_PAPER_MONEY = "要是真钱就好了"
 
+STRINGS.NAMES.ZSKB_PAPER_MOON = "纸月亮"
+STRINGS.RECIPE_DESC.ZSKB_PAPER_MOON = "剪个纸月亮把天盖住！"
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.ZSKB_PAPER_MOON = "剪个纸月亮把天盖住！"
+
 --------------------------------------------------------------------------
 --[[ ACTIONS ]]
 --------------------------------------------------------------------------

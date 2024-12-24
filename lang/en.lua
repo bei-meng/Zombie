@@ -284,6 +284,10 @@ STRINGS.NAMES.ZSKB_PAPER_MONEY = "Paper Money"
 STRINGS.RECIPE_DESC.ZSKB_PAPER_MONEY = "Even the underworld has wealth"
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.ZSKB_PAPER_MONEY = "If only it were real money"
 
+STRINGS.NAMES.ZSKB_PAPER_MOON = "Paper Moon"
+STRINGS.RECIPE_DESC.ZSKB_PAPER_MOON = "Cut a paper moon to cover the sky!"
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.ZSKB_PAPER_MOON = "Cut a paper moon to cover the sky!"
+
 --------------------------------------------------------------------------
 --[[ ACTIONS ]]
 --------------------------------------------------------------------------

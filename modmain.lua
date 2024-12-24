@@ -50,6 +50,7 @@ PrefabFiles = {
     "zskb_coffin_nail",                     --棺材钉
     "zskb_moving_paper_doll",               --移动纸人
     "zskb_paper_money",                     --纸币
+    "zskb_paper_moon",                      --纸月亮
 }
 
 Assets = {
@@ -103,10 +104,10 @@ Assets = {
 
     Asset("ANIM", "anim/zskb_leaves_canopy.zip"),  --榕树树荫
 
-    Asset("ATLAS", "images/paper_tech_icon.xml"), --纸扎科技图标
+    Asset("ATLAS", "images/paper_tech_icon.xml"),  --纸扎科技图标
     Asset("IMAGE", "images/paper_tech_icon.tex"),
 
-    Asset("ANIM", "anim/zskb_minisign1.zip"),      --小木牌资源,后面的数字代表 zskb_minisign_list.lua 中的序号
+    Asset("ANIM", "anim/zskb_minisign1.zip"), --小木牌资源,后面的数字代表 zskb_minisign_list.lua 中的序号
     Asset("ANIM", "anim/zskb_minisign2.zip"),
 }
 

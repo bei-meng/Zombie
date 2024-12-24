@@ -250,6 +250,17 @@ AddRecipe2(
         numtogive = 5,
     }
 )
+--纸月亮
+AddRecipe2(
+    "zskb_paper_moon",
+    { Ingredient("papyrus", 2), Ingredient("nightmarefuel", 4), Ingredient("horrorfuel", 1), Ingredient("zskb_ghostfire", 2) },
+    TECH.ZSKB_PAPER_TECH_ONE,
+    {
+        nounlock = true,
+        atlas = "images/zskb_inventoryimages.xml",
+        image = "zskb_paper_moon.tex",
+    }
+)
 
 ----CONSTRUCTION PLANS----
 --no api yet
