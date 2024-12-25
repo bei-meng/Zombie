@@ -288,6 +288,10 @@ STRINGS.NAMES.ZSKB_PAPER_MOON = "Paper Moon"
 STRINGS.RECIPE_DESC.ZSKB_PAPER_MOON = "Cut a paper moon to cover the sky!"
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.ZSKB_PAPER_MOON = "Cut a paper moon to cover the sky!"
 
+STRINGS.NAMES.ZSKB_FIRE_BASIN = "Fire Basin"
+STRINGS.RECIPE_DESC.ZSKB_FIRE_BASIN = "July's blazing fire, September's warm clothing"
+STRINGS.CHARACTERS.GENERIC.DESCRIBE.ZSKB_FIRE_BASIN = "July's blazing fire, September's warm clothing"
+
 STRINGS.NAMES.ZSK_BREAK_TALISMAN = "Break seal talisman"
 STRINGS.RECIPE_DESC.ZSK_BREAK_TALISMAN = "Expel the ominous and malevolent energy, and protect the person's safety and health."
 STRINGS.CHARACTERS.GENERIC.DESCRIBE.ZSK_BREAK_TALISMAN  = "Expel the ominous and malevolent energy, and protect the person's safety and health."

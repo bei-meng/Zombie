@@ -545,3 +545,39 @@ AddComponentPostInit("burnable", function(self, inst)
         end
     end
 end)
+
+-- 可堆叠的东西给予火盆，直接全部给火盆
+local function FireBasin_AcceptDecor(self)
+    local _OldAcceptDecor = self.AcceptDecor
+
+    function self:AcceptDecor(item, giver)
+        if self.inst.prefab == "zskb_fire_basin" then
+            local stackable = item.components.stackable
+            if stackable and stackable:IsStack() then
+                item.components.inventoryitem:RemoveFromOwner(true)
+            else
+                item.components.inventoryitem:RemoveFromOwner(true)
+            end
+
+            if self.ondecorgiven then
+                self.ondecorgiven(self.inst, item, giver)
+            end
+
+            self.decor_item = item
+            self.enabled = false
+
+            self.inst:ListenForEvent("onremove", self._on_decor_item_removed, item)
+            self.inst:ListenForEvent("onpickup", self._on_decor_item_picked_up, item)
+
+            local item_furnituredecor = item.components.furnituredecor
+            if item_furnituredecor then
+                item_furnituredecor:PutOnFurniture(self.inst)
+            end
+
+            return true
+        else
+            return _OldAcceptDecor(self, item, giver)
+        end
+    end
+end
+AddComponentPostInit("furnituredecortaker", FireBasin_AcceptDecor)

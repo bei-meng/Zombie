@@ -5,6 +5,7 @@ local _G = GLOBAL
 
 --※※ 万物皆是prefab
 PrefabFiles = {
+    --朋也&小胖
     "zskb_zombie",                          --人物代码文件
     "zskb_zombie_none",                     --人物皮肤
     "zskb_coffin",                          --阴棺
@@ -36,6 +37,7 @@ PrefabFiles = {
     "zskb_mountain_spirit_house_exit",      --山神庙出口
     "zskb_interior_items",                  --山神庙相关物品
     "zskb_mountain_spirit_house_interiors", --山神庙内饰
+    --盖德
     "zskb_red_packet",                      --红包
     "zskb_banyantreenut",                   --榕树树种
     "zskb_banyantree",                      --榕树
@@ -51,6 +53,8 @@ PrefabFiles = {
     "zskb_moving_paper_doll",               --移动纸人
     "zskb_paper_money",                     --纸币
     "zskb_paper_moon",                      --纸月亮
+    "zskb_fire_basin",                      --火盆
+    --北甍
     "zskb_break_talisman",                  --破煞符
     "zskb_seal_talisman",                   --镇煞符
 }
@@ -172,6 +176,6 @@ modimport("postinit/foods")          --料理
 modimport("postinit/stategraphs")
 
 
-modimport("postinit/immobilize")    -- 定身相关
+modimport("postinit/immobilize") -- 定身相关
 --※※ 兼容高清小木牌需前往 zskb_minisign_list.lua 填写 symbol(贴图名称) 和动画序号
 --不会弄小木牌的话交给Gyde弄就行

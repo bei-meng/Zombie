@@ -261,31 +261,42 @@ AddRecipe2(
         image = "zskb_paper_moon.tex",
     }
 )
+--火盆
+AddRecipe2(
+    "zskb_fire_basin",
+    { Ingredient("goldnugget", 2), Ingredient("charcoal", 2) },
+    TECH.ZSKB_PAPER_TECH_ONE,
+    {
+        nounlock = true,
+        atlas = "images/zskb_inventoryimages.xml",
+        image = "zskb_fire_basin.tex",
+    }
+)
 
 --破煞符
 AddRecipe2(
     "zskb_break_talisman",
-    { Ingredient("papyrus", 1), Ingredient("featherpencil", 1),},
+    { Ingredient("papyrus", 1), Ingredient("featherpencil", 1), },
     TECH.SCIENCE_TWO,
     {
         atlas = "images/zskb_inventoryimages.xml",
         image = "zskb_break_talisman.tex",
         builder_tag = "zskb_zombie",
     },
-    { "CHARACTER",}
+    { "CHARACTER", }
 )
 
 --震煞符
 AddRecipe2(
     "zskb_seal_talisman",
-    { Ingredient("papyrus", 1), Ingredient("featherpencil", 1),Ingredient("thulecite", 1),},
+    { Ingredient("papyrus", 1), Ingredient("featherpencil", 1), Ingredient("thulecite", 1), },
     TECH.SCIENCE_TWO,
     {
         atlas = "images/zskb_inventoryimages.xml",
         image = "zskb_seal_talisman.tex",
         builder_tag = "zskb_zombie",
     },
-    { "CHARACTER",}
+    { "CHARACTER", }
 )
 
 ----CONSTRUCTION PLANS----

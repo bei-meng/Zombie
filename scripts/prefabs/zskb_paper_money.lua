@@ -8,6 +8,7 @@ local function fn()
 
     inst.entity:AddTransform()
     inst.entity:AddAnimState()
+    inst.entity:AddFollower()
     inst.entity:AddNetwork()
 
     MakeInventoryPhysics(inst)
@@ -17,6 +18,8 @@ local function fn()
     inst.AnimState:PlayAnimation("idle")
 
     inst:AddTag("cattoy")
+    inst:AddTag("zskb_burn")
+    inst:AddTag("furnituredecor")
 
     MakeInventoryFloatable(inst, "med", nil, 0.75)
 
@@ -35,6 +38,8 @@ local function fn()
     inst.components.fuel.fuelvalue = TUNING.SMALL_FUEL
 
     inst:AddComponent("tradable")
+
+    inst:AddComponent("furnituredecor")
 
     MakeSmallBurnable(inst, TUNING.SMALL_BURNTIME)
     MakeSmallPropagator(inst)
