@@ -80,6 +80,8 @@ local InventoryPrefabsList = { --每个元素的下标值为每种物品栏图�
     zskb_paper_money = 2,
     zskb_paper_moon = 2,
     zskb_fire_basin = 2,
+    zskb_break_talisman = 2,
+    zskb_seal_talisman = 2,
 }
 
 return InventoryPrefabsList

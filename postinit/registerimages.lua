@@ -79,6 +79,8 @@ local r1_table =
     "zskb_paper_money",
     "zskb_paper_moon",
     "zskb_fire_basin",
+    "zskb_break_talisman",
+    "zskb_seal_talisman",
 }
 
 for _, v in ipairs(r1_table) do
